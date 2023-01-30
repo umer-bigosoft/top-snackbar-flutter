@@ -103,7 +103,7 @@ class CustomSnackBarState extends State<CustomSnackBar> {
     final theme = Theme.of(context);
     return Container(
       clipBehavior: Clip.hardEdge,
-      height: 80,
+      height: 50,
       decoration: BoxDecoration(
         color: widget.backgroundColor,
         borderRadius: widget.borderRadius,
@@ -112,17 +112,6 @@ class CustomSnackBarState extends State<CustomSnackBar> {
       width: double.infinity,
       child: Stack(
         children: [
-          Positioned(
-            top: widget.iconPositionTop,
-            left: widget.iconPositionLeft,
-            child: SizedBox(
-              height: 95,
-              child: Transform.rotate(
-                angle: widget.iconRotationAngle * pi / 180,
-                child: widget.icon,
-              ),
-            ),
-          ),
           Center(
             child: Padding(
               padding: widget.messagePadding,
