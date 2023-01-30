@@ -143,7 +143,7 @@ class _TopSnackBarState extends State<_TopSnackBar>
 
   Timer? _timer;
 
-  final _offsetTween = Tween(begin: const Offset(0, -1), end: Offset.zero);
+  final _offsetTween = Tween(begin: const Offset(-1, 0), end: Offset.zero);
 
   @override
   void initState() {
